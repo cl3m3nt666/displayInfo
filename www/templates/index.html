@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ s }}</title>
+
+        <link rel="stylesheet" href={{ url_for('static', filename='css/style.css') }}>
+
+  </head>
+
+
+  <body>
+
+    <h2>Hello from {{ s }}</h2>
+    <h2>ip : {{ ip }}</h2>
+
+
+    <div class="layer bottom">
+  <div class="cube nw"></div>
+  <div class="cube w"></div>
+  <div class="cube n"></div>
+  <div class="cube ne"></div>
+  <div class="cube "></div>
+  <div class="cube sw"></div>
+  <div class="cube s"></div>
+  <div class="cube e"></div>
+  <div class="cube se"></div>
+			</div>
+			<div class="layer">
+  				<div class="cube nw"></div>
+	  <div class="cube w"></div>
+  				<div class="cube n"></div>
+  				<div class="cube ne"></div>
+	  <div class="cube "></div>
+	  <div class="cube sw"></div>
+  <div class="cube s"></div>
+  <div class="cube e"></div>
+  <div class="cube se"></div>
+			</div>
+			<div class="layer top">
+  <div class="cube nw"></div>
+  <div class="cube w"></div>
+  <div class="cube n"></div>
+  <div class="cube ne"></div>
+  <div class="cube "></div>
+  <div class="cube sw"></div>
+  <div class="cube s"></div>
+  <div class="cube e"></div>
+  <div class="cube se"></div>
+			</div>
+        <script src={{ url_for('static', filename='js/index.js') }}></script>
+  </body>
+</html>
