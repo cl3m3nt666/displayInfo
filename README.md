@@ -4,7 +4,7 @@
 
 https://hub.docker.com/r/cl3m3nt/displayinfo/
 
-[![Docker Stars](https://img.shields.io/docker/stars/_/ubuntu.svg?maxAge=2592000)](https://hub.docker.com/r/cl3m3nt/displayinfo/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/mashape/kong.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/cl3m3nt/displayinfo/)
 
 [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?maxAge=2592000)](https://hub.docker.com/r/cl3m3nt/displayinfo/)
 
