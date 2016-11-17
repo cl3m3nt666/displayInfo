@@ -1,0 +1,12 @@
+sudo: required
+
+language: bash
+
+services:
+  - docker
+
+script:
+  - docker build -t cl3m3nt/displayInfo .
+
+notifications:
+  email: true
