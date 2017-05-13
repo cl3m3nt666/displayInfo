@@ -1,26 +1,16 @@
-#
-# Python Dockerfile
-#
-#
-# Pull base image.
-FROM ubuntu
+FROM alpine:3.5
+LABEL maintainer "clement@le-corre.eu"
+LABEL description "Flask framwork for display info"
 
-# Install Python.
-RUN \
-  apt-get update && \
-  apt-get install -y python python-dev python-pip python-virtualenv && \
-  rm -rf /var/lib/apt/lists/*
+ENV FLASK_VERSION 0.12.1
 
-# install python libraries
-RUN pip install Flask
+RUN apk add --update --no-cache \
+        python3 \
+        py3-pip && \
+        pip3 install --upgrade pip && \
+        pip3 install Flask==${FLASK_VERSION}
 
-# update source code
-RUN rm -rf /var/www
 COPY www /var/www
-RUN ls /var/www
-
-# post code commands
-WORKDIR /var/www
 
 EXPOSE 5000
-ENTRYPOINT ["python", "/var/www/app.py"]
+CMD ["python3", "/var/www/app.py"]
