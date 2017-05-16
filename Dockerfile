@@ -2,7 +2,7 @@ FROM alpine:3.5
 LABEL maintainer "clement@le-corre.eu"
 LABEL description "Flask framwork for display info"
 
-ENV FLASK_VERSION 0.12.1
+ARG FLASK_VERSION 0.12.1
 
 RUN apk add --update --no-cache \
         python3 \
